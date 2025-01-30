@@ -1,9 +1,9 @@
 {
   "name": "my-test-lib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Учебная публикация проекта",
   "main": "index.js",
   "author": "VUIVR",
   "license": "MIT",
-  "private": true
+  "private": false
 }
