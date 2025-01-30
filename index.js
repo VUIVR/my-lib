@@ -10,10 +10,9 @@ export default class {
    * @example
    * convertFromPhone('+7 (999) 111-22-33') => '9991112233'
    */
-  public static convertFromPhone(val: string): string {
+  static convertFromPhone(val) {
     return val.replace("+7", "").replace(/[^0-9.]/g, "");
   }
-
 
   /**
    * конвертирует номер телефона из формата 9991112233
@@ -24,9 +23,8 @@ export default class {
    * @example
    * convertToPhone('9991112233') => '+7 (999) 111-22-33'
    */
-  public static convertToPhone(val: string): string {
+  static convertToPhone(val) {
     return val.replace(/(\d{3})(\d{3})(\d{2})(\d{2})/, "+7 ($1) $2-$3-$4");
   }
-
-
 }
+
