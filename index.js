@@ -11,6 +11,7 @@ export default class {
    * convertFromPhone('+7 (999) 111-22-33') => '9991112233'
    */
   static convertFromPhone(val) {
+    if(!val || typeof val !== "string") return val;
     return val.replace("+7", "").replace(/[^0-9.]/g, "");
   }
 
